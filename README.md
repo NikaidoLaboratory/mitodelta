@@ -61,4 +61,4 @@ The result is a list of high-confidence deletions.
 - Ensure all required input files exist and paths are correct.
 
 ## Lisense
-need to be updated.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
