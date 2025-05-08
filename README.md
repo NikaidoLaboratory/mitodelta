@@ -60,5 +60,5 @@ The result is a list of high-confidence deletions.
 - Intermediate steps generate dummy files (`results/step1.txt`, `results/step2.txt`) to help Snakemake manage dependencies.
 - Ensure all required input files exist and paths are correct.
 
-## Lisense
+## License
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
