@@ -1,0 +1,21 @@
+version=926
+alphabet=ACGT
+numofsequences=1
+numofletters=16568
+letterfreqs=5124 5181 2169 4094
+maxunsortedinterval=0
+keeplowercase=1
+masklowercase=0
+numofindexes=1
+integersize=32
+#lastal -r6 -q18 -a21 -b9
+totallength=16571
+specialcharacters=3
+prefixlength=5
+subsetseed=A C G T
+subsetseed=A C G T
+subsetseed=A C G T
+subsetseed=A C G T
+subsetseed=A C G T
+subsetseed=A C G T
+subsetseed=ACGT
