@@ -23,7 +23,7 @@ Custom scripts used across these analyses are stored in the `eklipse/`, `mitosal
   Benchmarking (including customized existing tools) on simulated data.
 
 - **3_customized-benchmark_real-ps-data/**  
-  Benchmarking (including customized existing tools) using real Pearson syndrome patients' scRNA-seq data.
+  Benchmarking (including customized existing tools) using real Pearson syndrome patients’ scRNA-seq data.
 
 - **4_mitodelta-application_real-pd-data/**  
   Application of MitoDelta analysis on real Parkinson’s disease data.
