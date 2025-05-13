@@ -28,7 +28,3 @@ Custom scripts used across these analyses are stored in the `eklipse/`, `mitosal
 - **4_mitodelta-application_real-pd-data/**  
   Application of MitoDelta analysis on real Parkinson’s disease data.
 
-## Environment & Usage
-
-Each directory includes scripts and/or documentation (`README.md`) detailing the environment, dependencies, and execution steps required for the analysis. Please refer to the respective folders for specifics.
-
