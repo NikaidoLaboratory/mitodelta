@@ -30,7 +30,7 @@ In the `Snakefile`, set the paths to the following:
 
 Then run:
 ```
-snakemake results/step1.txt
+snakemake --cores 1 results/step1.txt
 ```
 This step will call the script `01_step1.sh`,`1_split_bam.py` to split your BAM files based on cell-type labels.
 
@@ -40,7 +40,7 @@ Update the `Snakefile` to specify the correct path to the config file.
 
 Run the step with:
 ```
-snakemake results/step2.txt
+snakemake --cores 1 results/step2.txt
 ```
 This will execute `02_step2.sh`,`2_deletion_call.py` and generate a table of candidate deletions.
 
@@ -50,7 +50,7 @@ The filtering thresholds (error rate and FDR) are configurable in the `Snakefile
 
 Run this step with:
 ```
-snakemake /path/to/output_dir/step3_deletions_afterfiltering.tsv
+snakemake --cores 1 /path/to/output_dir/step3_deletions_afterfiltering.tsv
 ```
 The result is a list of high-confidence deletions.
 
