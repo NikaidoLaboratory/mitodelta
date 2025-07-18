@@ -35,7 +35,7 @@ python $mitodelta/scripts/1_split_bam.py \
 --max_NH 1 \
 --min_MQ 0
 
-for outbam in "$output/$sample".*.bam; do
+for outbam in $output/${sample}.*.bam; do
   outfq="\$(dirname "\$outbam")/\$(basename "\${outbam%.bam}").fastq"
   samtools fastq "\$outbam" > "\$outfq"
   rm "\$outbam"
