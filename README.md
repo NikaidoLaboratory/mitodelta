@@ -4,7 +4,7 @@
 ## Instalation
 First, clone the MitoDelta repository:
 ```
-git clone https://github/orgs/NikaidoLaboratory/mitodelta.git
+git clone https://github.com/NikaidoLaboratory/mitodelta.git
 ```
 Then, pull the pre-built Docker image:
 ```
