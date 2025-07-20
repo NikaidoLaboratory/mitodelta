@@ -44,7 +44,7 @@ Update the `Snakefile` to specify the correct path to the config file.
 
 Run the step with:
 ```
-snakemake --cores 1 results/step2.txt
+snakemake --cores 1 results/step2_deletions_beforefiltering.tsv
 ```
 This will execute `02_step2.sh`,`2_deletion_call.py` and generate a table of candidate deletions.
 
@@ -56,7 +56,7 @@ Run this step with:
 ```
 snakemake --cores 1 /path/to/output_dir/step3_deletions_afterfiltering.tsv
 ```
-The result is a list of high-confidence deletions.
+This will execute `3_filter_variant.py` and return the final list of high-confidence deletions at the `results/` directory.
 
 
 ## Notes
