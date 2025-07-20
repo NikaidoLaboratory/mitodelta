@@ -1,0 +1,377 @@
+lastal = /opt/bin/last/src/lastal
+lastsp = /opt/bin/last/src/last-split
+mfcv = /opt/bin/last/scripts/maf-convert
+reformat = /opt/bin/bbmap/reformat.sh
+samtools = /opt/bin/samtools/samtools
+sambamba = /opt/bin/sambamba
+b2fq = /opt/bin/bedtools2/bin/bamToFastq
+gcov = /opt/bin/bedtools2/bin/genomeCoverageBed
+intersectBed = /opt/bin/bedtools2/bin/intersectBed
+sortBed = /opt/bin/bedtools2/bin/sortBed
+clusterBed = /opt/bin/bedtools2/bin/clusterBed
+randomBed = /opt/bin/bedtools2/bin/randomBed
+groupBy = /opt/bin/bedtools2/bin/groupBy
+bg2bw = /opt/bin/bedGraphToBigWig
+lastindex = /home/hrknkg/mitosalt/MitoSAlt_1.1.1/human/human_mt
+mtfaindex = /home/hrknkg/mitosalt/MitoSAlt_1.1.1/human/human_mt.fasta.fai
+gsize = /home/hrknkg/mitosalt/MitoSAlt_1.1.1/human/hg38.size
+threads = 8
+refchr = chrM
+msize = 16569
+exclude = 5
+orihs = 16081
+orihe = 407
+orils = 5730
+orile = 5763
+score_threshold = 80
+evalue_threshold = 0.00001
+split_length = 15
+paired_distance = 1000
+deletion_threshold_min = 30
+deletion_threshold_max = 30000
+breakthreshold = -2
+cluster_threshold = 1
+breakspan = 15
+sizelimit = 10000
+hplimit = 0.01
+flank = 15
+split_distance_threshold = 5
+dna = no
+enriched = no
+nu_mt = yes
+rmtmp = yes
+o_mt = yes
+i_del = yes
+cn_mt = yes
+Sat Jun 28 18:35:25 2025: Map to MT genome
+Sat Jun 28 18:35:26 2025: Generate Bigwig
+Sat Jun 28 18:35:26 2025: Build split read hash
+Sat Jun 28 18:35:26 2025: Generate non-split read BED
+Sat Jun 28 18:35:26 2025: Process hash to get best deletion/duplication candidates
+Sat Jun 28 18:35:26 2025: Build split read clusters
+Sat Jun 28 18:35:26 2025: Generate and print results
+Check cluster33
+Check cluster22
+Check cluster44
+Check cluster11
+Sat Jun 28 18:35:27 2025:Finished
+lastal = /opt/bin/last/src/lastal
+lastsp = /opt/bin/last/src/last-split
+mfcv = /opt/bin/last/scripts/maf-convert
+reformat = /opt/bin/bbmap/reformat.sh
+samtools = /opt/bin/samtools/samtools
+sambamba = /opt/bin/sambamba
+b2fq = /opt/bin/bedtools2/bin/bamToFastq
+gcov = /opt/bin/bedtools2/bin/genomeCoverageBed
+intersectBed = /opt/bin/bedtools2/bin/intersectBed
+sortBed = /opt/bin/bedtools2/bin/sortBed
+clusterBed = /opt/bin/bedtools2/bin/clusterBed
+randomBed = /opt/bin/bedtools2/bin/randomBed
+groupBy = /opt/bin/bedtools2/bin/groupBy
+bg2bw = /opt/bin/bedGraphToBigWig
+lastindex = /home/hrknkg/mitosalt/MitoSAlt_1.1.1/human/human_mt
+mtfaindex = /home/hrknkg/mitosalt/MitoSAlt_1.1.1/human/human_mt.fasta.fai
+gsize = /home/hrknkg/mitosalt/MitoSAlt_1.1.1/human/hg38.size
+threads = 8
+refchr = chrM
+msize = 16569
+exclude = 5
+orihs = 16081
+orihe = 407
+orils = 5730
+orile = 5763
+score_threshold = 80
+evalue_threshold = 0.00001
+split_length = 15
+paired_distance = 1000
+deletion_threshold_min = 30
+deletion_threshold_max = 30000
+breakthreshold = -2
+cluster_threshold = 1
+breakspan = 15
+sizelimit = 10000
+hplimit = 0.01
+flank = 15
+split_distance_threshold = 5
+dna = no
+enriched = no
+nu_mt = yes
+rmtmp = yes
+o_mt = yes
+i_del = yes
+cn_mt = yes
+Sat Jun 28 18:35:27 2025: Map to MT genome
+Sat Jun 28 18:35:29 2025: Generate Bigwig
+Sat Jun 28 18:35:29 2025: Build split read hash
+Sat Jun 28 18:35:30 2025: Generate non-split read BED
+Sat Jun 28 18:35:30 2025: Process hash to get best deletion/duplication candidates
+Sat Jun 28 18:35:30 2025: Build split read clusters
+Sat Jun 28 18:35:30 2025: Generate and print results
+Check cluster2929
+Check cluster2424
+Check cluster22
+Check cluster55
+Check cluster33
+Check cluster1414
+Check cluster1919
+Check cluster11
+Check cluster1818
+Check cluster1515
+Check cluster1111
+Check cluster2121
+Check cluster2828
+Check cluster2725
+Check cluster1616
+Check cluster99
+Check cluster2323
+Check cluster1313
+Check cluster77
+Check cluster2626
+Check cluster2020
+Check cluster2527
+Check cluster1212
+Check cluster44
+Check cluster88
+Check cluster2222
+Check cluster1010
+Check cluster66
+Check cluster1717
+Sat Jun 28 18:35:31 2025:Finished
+lastal = /opt/bin/last/src/lastal
+lastsp = /opt/bin/last/src/last-split
+mfcv = /opt/bin/last/scripts/maf-convert
+reformat = /opt/bin/bbmap/reformat.sh
+samtools = /opt/bin/samtools/samtools
+sambamba = /opt/bin/sambamba
+b2fq = /opt/bin/bedtools2/bin/bamToFastq
+gcov = /opt/bin/bedtools2/bin/genomeCoverageBed
+intersectBed = /opt/bin/bedtools2/bin/intersectBed
+sortBed = /opt/bin/bedtools2/bin/sortBed
+clusterBed = /opt/bin/bedtools2/bin/clusterBed
+randomBed = /opt/bin/bedtools2/bin/randomBed
+groupBy = /opt/bin/bedtools2/bin/groupBy
+bg2bw = /opt/bin/bedGraphToBigWig
+lastindex = /home/hrknkg/mitosalt/MitoSAlt_1.1.1/human/human_mt
+mtfaindex = /home/hrknkg/mitosalt/MitoSAlt_1.1.1/human/human_mt.fasta.fai
+gsize = /home/hrknkg/mitosalt/MitoSAlt_1.1.1/human/hg38.size
+threads = 8
+refchr = chrM
+msize = 16569
+exclude = 5
+orihs = 16081
+orihe = 407
+orils = 5730
+orile = 5763
+score_threshold = 80
+evalue_threshold = 0.00001
+split_length = 15
+paired_distance = 1000
+deletion_threshold_min = 30
+deletion_threshold_max = 30000
+breakthreshold = -2
+cluster_threshold = 1
+breakspan = 15
+sizelimit = 10000
+hplimit = 0.01
+flank = 15
+split_distance_threshold = 5
+dna = no
+enriched = no
+nu_mt = yes
+rmtmp = yes
+o_mt = yes
+i_del = yes
+cn_mt = yes
+Sat Jun 28 18:35:31 2025: Map to MT genome
+Sat Jun 28 18:35:54 2025: Generate Bigwig
+Sat Jun 28 18:35:54 2025: Build split read hash
+Sat Jun 28 18:35:55 2025: Generate non-split read BED
+Sat Jun 28 18:35:56 2025: Process hash to get best deletion/duplication candidates
+Sat Jun 28 18:35:56 2025: Build split read clusters
+Sat Jun 28 18:35:56 2025: Generate and print results
+Check cluster2626
+Check cluster4443
+Check cluster9091
+Check cluster43
+Check cluster8990
+Check cluster3133
+Check cluster115119
+Check cluster147154
+Check cluster116121
+Check cluster155165
+Check cluster124128
+Check cluster8585
+Check cluster1515
+Check cluster146153
+Check cluster9495
+Check cluster4951
+Check cluster7172
+Check cluster157163
+Check cluster1414
+Check cluster132141
+Check cluster6261
+Check cluster5054
+Check cluster8482
+Check cluster8787
+Check cluster1717
+Check cluster2728
+Check cluster168177
+Check cluster2225
+Check cluster119123
+Check cluster8588
+Check cluster2527
+Check cluster4041
+Check cluster127134
+Check cluster8184
+Check cluster3839
+Check cluster5455
+Check cluster54
+Check cluster142150
+Check cluster5859
+Check cluster4249
+Check cluster139146
+Check cluster3435
+Check cluster6766
+Check cluster123130
+Check cluster8288
+Check cluster113118
+Check cluster22
+Check cluster122125
+Check cluster126133
+Check cluster98101
+Check cluster121126
+Check cluster6168
+Check cluster111113
+Check cluster8686
+Check cluster1616
+Check cluster118124
+Check cluster1820
+Check cluster169176
+Check cluster158161
+Check cluster3536
+Check cluster159171
+Check cluster113116
+Check cluster3637
+Check cluster124129
+Check cluster122127
+Check cluster66
+Check cluster112114
+Check cluster151160
+Check cluster109115
+Check cluster5657
+Check cluster114117
+Check cluster97100
+Check cluster4645
+Check cluster148164
+Check cluster165172
+Check cluster98
+Check cluster77
+Check cluster145154
+Check cluster7777
+Check cluster9296
+Check cluster2424
+Check cluster166174
+Check cluster1922
+Check cluster152162
+Check cluster2929
+Check cluster99102
+Check cluster9192
+Check cluster5555
+Check cluster164173
+Check cluster9293
+Check cluster149156
+Check cluster2829
+Check cluster7879
+Check cluster4644
+Check cluster107108
+Check cluster120122
+Check cluster9699
+Check cluster1212
+Check cluster5960
+Check cluster1110
+Check cluster108111
+Check cluster7980
+Check cluster4146
+Check cluster4342
+Check cluster89
+Check cluster103105
+Check cluster110112
+Check cluster143152
+Check cluster6669
+Check cluster101104
+Check cluster7071
+Check cluster130137
+Check cluster128135
+Check cluster6362
+Check cluster7478
+Check cluster9597
+Check cluster140147
+Check cluster4550
+Check cluster106109
+Check cluster9394
+Check cluster102103
+Check cluster2221
+Check cluster124131
+Check cluster8383
+Check cluster1313
+Check cluster35
+Check cluster2019
+Check cluster2118
+Check cluster6867
+Check cluster7574
+Check cluster11
+Check cluster1011
+Check cluster8081
+Check cluster154159
+Check cluster152157
+Check cluster6965
+Check cluster7272
+Check cluster2731
+Check cluster163170
+Check cluster161168
+Check cluster2729
+Check cluster4848
+Check cluster7675
+Check cluster5253
+Check cluster8889
+Check cluster162169
+Check cluster134144
+Check cluster147166
+Check cluster4747
+Check cluster5152
+Check cluster5356
+Check cluster150155
+Check cluster7776
+Check cluster105106
+Check cluster156162
+Check cluster3233
+Check cluster153158
+Check cluster128136
+Check cluster3738
+Check cluster167175
+Check cluster160167
+Check cluster3940
+Check cluster2832
+Check cluster125132
+Check cluster129138
+Check cluster5758
+Check cluster141149
+Check cluster7373
+Check cluster133139
+Check cluster6464
+Check cluster2323
+Check cluster117120
+Check cluster137145
+Check cluster6563
+Check cluster104107
+Check cluster100110
+Check cluster131140
+Check cluster135143
+Check cluster3030
+Check cluster3334
+Check cluster136148
+Check cluster138142
+Check cluster6070
+Check cluster144151
+Check cluster9598
+Sat Jun 28 18:36:25 2025:Finished

@@ -1,0 +1,51 @@
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+
+sambamba 0.6.8 by Artem Tarasov and Pjotr Prins (C) 2012-2018
+    LDC 1.10.0 / DMD v2.080.1 / LLVM6.0.1 / bootstrap LDC - the LLVM D compiler (0.17.4)
+
+Processing reference #1 (chrM)
+
+sambamba 0.6.8 by Artem Tarasov and Pjotr Prins (C) 2012-2018
+    LDC 1.10.0 / DMD v2.080.1 / LLVM6.0.1 / bootstrap LDC - the LLVM D compiler (0.17.4)
+
+sambamba-depth: Cannot open or create file 'tmp_SRR30600800.20000.bam' : No such file or directory
+
+*****
+***** ERROR: Requested column 8, but database file tmp_random_SRR30600800.20000.cov only has fields 1 - 0.
+rm: cannot remove 'tmp1_SRR30600800.20000*': No such file or directory
+rm: cannot remove 'tmp2_SRR30600800.20000*': No such file or directory
+rm: cannot remove 'tmp_final_SRR30600800.20000*': No such file or directory
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+
+sambamba 0.6.8 by Artem Tarasov and Pjotr Prins (C) 2012-2018
+    LDC 1.10.0 / DMD v2.080.1 / LLVM6.0.1 / bootstrap LDC - the LLVM D compiler (0.17.4)
+
+Processing reference #1 (chrM)
+
+sambamba 0.6.8 by Artem Tarasov and Pjotr Prins (C) 2012-2018
+    LDC 1.10.0 / DMD v2.080.1 / LLVM6.0.1 / bootstrap LDC - the LLVM D compiler (0.17.4)
+
+sambamba-depth: Cannot open or create file 'tmp_SRR30600800.200000.bam' : No such file or directory
+
+*****
+***** ERROR: Requested column 8, but database file tmp_random_SRR30600800.200000.cov only has fields 1 - 0.
+rm: cannot remove 'tmp1_SRR30600800.200000*': No such file or directory
+rm: cannot remove 'tmp2_SRR30600800.200000*': No such file or directory
+rm: cannot remove 'tmp_final_SRR30600800.200000*': No such file or directory
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+
+sambamba 0.6.8 by Artem Tarasov and Pjotr Prins (C) 2012-2018
+    LDC 1.10.0 / DMD v2.080.1 / LLVM6.0.1 / bootstrap LDC - the LLVM D compiler (0.17.4)
+
+Processing reference #1 (chrM)
+
+sambamba 0.6.8 by Artem Tarasov and Pjotr Prins (C) 2012-2018
+    LDC 1.10.0 / DMD v2.080.1 / LLVM6.0.1 / bootstrap LDC - the LLVM D compiler (0.17.4)
+
+sambamba-depth: Cannot open or create file 'tmp_SRR30600800.2000000.bam' : No such file or directory
+
+*****
+***** ERROR: Requested column 8, but database file tmp_random_SRR30600800.2000000.cov only has fields 1 - 0.
+rm: cannot remove 'tmp1_SRR30600800.2000000*': No such file or directory
+rm: cannot remove 'tmp2_SRR30600800.2000000*': No such file or directory
+rm: cannot remove 'tmp_final_SRR30600800.2000000*': No such file or directory
