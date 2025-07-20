@@ -31,7 +31,6 @@ In the `Snakefile`, set the paths to the following:
 - Path to cloned MitoDelta (`mitodelta`)
 - BAM directory (`bam_dir`)
 - Cell-type label directory (`label_dir`)
-- Output directory (`out_dir`)
 
 Then run:
 ```
