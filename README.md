@@ -28,7 +28,6 @@ Each step of the pipeline is described below.
 ### Step 1. Split BAM files by cell types
 First, copy the `Snakefile` to your working directory, and then configure according to your environment.
 In the `Snakefile`, set the paths to the following:
-- Path to cloned MitoDelta (`mitodelta`)
 - BAM directory (`bam_dir`)
 - Cell-type label directory (`label_dir`)
 
