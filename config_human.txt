@@ -1,16 +1,16 @@
 #TOOLS
-lastal = /opt/miniforge/envs/mitodelta_env/bin/lastal
-lastsp = /opt/miniforge/envs/mitodelta_env/bin/last-split
-mfcv = /opt/miniforge/envs/mitodelta_env/bin/maf-convert
-samtools = /opt/miniforge/envs/mitodelta_env/bin/samtools
-b2fq = /opt/miniforge/envs/mitodelta_env/bin/bamToFastq
-gcov = /opt/miniforge/envs/mitodelta_env/bin/genomeCoverageBed
-intersectBed = /opt/miniforge/envs/mitodelta_env/bin/intersectBed
-sortBed = /opt/miniforge/envs/mitodelta_env/bin/sortBed
-clusterBed = /opt/miniforge/envs/mitodelta_env/bin/clusterBed
-randomBed = /opt/miniforge/envs/mitodelta_env/bin/randomBed
-groupBy = /opt/miniforge/envs/mitodelta_env/bin/groupBy
-bg2bw = /opt/miniforge/envs/mitodelta_env/bin/bedGraphToBigWig
+lastal = /opt/miniforge/bin/lastal
+lastsp = /opt/miniforge/bin/last-split
+mfcv = /opt/miniforge/bin/maf-convert
+samtools = /opt/miniforge/bin/samtools
+b2fq = /opt/miniforge/bin/bamToFastq
+gcov = /opt/miniforge/bin/genomeCoverageBed
+intersectBed = /opt/miniforge/bin/intersectBed
+sortBed = /opt/miniforge/bin/sortBed
+clusterBed = /opt/miniforge/bin/clusterBed
+randomBed = /opt/miniforge/bin/randomBed
+groupBy = /opt/miniforge/bin/groupBy
+bg2bw = /opt/miniforge/bin/bedGraphToBigWig
 
 
 #GENOMES
