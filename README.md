@@ -54,7 +54,7 @@ The filtering thresholds (error rate and FDR) are configurable in the `Snakefile
 
 Run this step with:
 ```
-snakemake --cores 1 /path/to/output_dir/step3_deletions_afterfiltering.tsv
+snakemake --cores 1 results/step3_deletions_afterfiltering.tsv
 ```
 This will execute `3_filter_variant.py` and return the final list of high-confidence deletions at the `results/` directory.
 
