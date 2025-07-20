@@ -1,0 +1,51 @@
+#TOOLS
+lastal = /opt/miniforge/bin/lastal
+lastsp = /opt/miniforge/bin/last-split
+mfcv = /opt/miniforge/bin/maf-convert
+samtools = /opt/miniforge/bin/samtools
+b2fq = /opt/miniforge/bin/bamToFastq
+gcov = /opt/miniforge/bin/genomeCoverageBed
+intersectBed = /opt/miniforge/bin/intersectBed
+sortBed = /opt/miniforge/bin/sortBed
+clusterBed = /opt/miniforge/bin/clusterBed
+randomBed = /opt/miniforge/bin/randomBed
+groupBy = /opt/miniforge/bin/groupBy
+bg2bw = /opt/miniforge/bin/bedGraphToBigWig
+
+
+#GENOMES (specify absolute paths below; modify them for your own environment)
+lastindex = ../mitodelta/genome/mouse/mouse_mt
+mtfaindex = ../mitodelta/genome/mouse/mouse_mt.fasta.fai
+MT_fasta = ../mitodelta/genome/mouse/mouse_mt.fasta
+gsize = ../mitodelta/genome/mouse/mm39.size
+
+
+#MITOCHONDRIA FEATURES
+refchr = chrM
+msize = 16299
+exclude = 5
+orihs = 15423
+orihe = 16299
+orils = 5159
+orile = 5195
+
+
+#SCORING AND FILTERING FEATURES
+score_threshold = 80
+evalue_threshold = 0.00001
+split_length = 15
+paired_distance = 1000
+deletion_threshold_min = 30
+deletion_threshold_max = 30000
+breakthreshold = -2 
+cluster_threshold = 1
+breakspan = 15
+sizelimit = 10000
+hplimit = 0.01
+flank = 15
+split_distance_threshold = 5
+
+
+#COMPUTATION
+threads = 1
+rmtmp = yes
