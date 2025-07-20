@@ -2,8 +2,8 @@
 
 # Step 1. Split bam files by cell type
 
-if [ "$#" -ne 4 ]; then
-  echo "Usage: $0 <mitodelta path> <bam dir> <label dir> <output dir>"
+if [ "$#" -ne 3 ]; then
+  echo "Usage: $0 <mitodelta path> <bam dir> <label dir>"
   exit 1
 fi
 
@@ -11,7 +11,7 @@ mitodelta="$1"
 bam_dir="$2"
 lab_dir="$3"
 out_dir="$4"
-output="$out_dir/1_splitfq"
+output="1_splitfq"
 
 
 mkdir -p $output
