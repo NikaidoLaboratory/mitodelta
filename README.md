@@ -8,7 +8,7 @@ git clone https://github.com/NikaidoLaboratory/mitodelta.git
 ```
 Then, pull the pre-built Docker image:
 ```
-docker pull harukonak/mitodelta_env:1.0.1
+docker pull harukonak/mitodelta_env:1.0.2
 ```
 Or build it locally from the provided Dockerfile:
 ```
