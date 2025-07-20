@@ -775,22 +775,23 @@ def print_result(clustercount, clusterfile):
 ### Main
 def main():
     import sys
-    if len(sys.argv) != 4:
-        print("usage: python 2_last_alingment.py <config_file> <fastq file> <study name>")
+    if len(sys.argv) != 5:
+        print("usage: python 2_last_alingment.py <config_file> <fastq file> <study name> <mitodelta_path>")
         sys.exit(1)
 
     config_file = sys.argv[1]
     p1 = sys.argv[2]
     tag = sys.argv[3]
+    mitodelta_path = sys.argv[4]
 
     if not os.path.exists(config_file):
-        print(f"Configuration file missing, usage: python 2_last_alingment.py <config_file> <fastq file> <study name>")
+        print(f"Configuration file missing, usage: python 2_last_alingment.py <config_file> <fastq file> <study name> <mitodelta_path>")
         sys.exit(1)
     if not os.path.exists(p1):
-        print(f"Read file missing, usage: python 2_last_alingment.py <config_file> <fastq file> <study name>")
+        print(f"Read file missing, usage: python 2_last_alingment.py <config_file> <fastq file> <study name> <mitodelta_path>")
         sys.exit(1)
     if not tag:
-        print(f"Study name not given, usage: python 2_last_alingment.py <config_file> <fastq file> <study name>")
+        print(f"Study name not given, usage: python 2_last_alingment.py <config_file> <fastq file> <study name> <mitodelta_path>")
         sys.exit(1)
     
     directories = ['bam', 'del', 'tab', 'bw']
@@ -813,11 +814,10 @@ def main():
     groupBy = user_preferences.get('groupBy')
     bg2bw = user_preferences.get('bg2bw')
     
-    faindex = user_preferences.get('faindex')
-    lastindex = user_preferences.get('lastindex')
-    mtfaindex = user_preferences.get('mtfaindex')
-    gsize = user_preferences.get('gsize')
-    MT_fasta = user_preferences.get('MT_fasta')
+    lastindex = os.path.normpath(os.path.join(mitodelta_path, user_preferences.get('lastindex')))
+    mtfaindex = os.path.normpath(os.path.join(mitodelta_path, user_preferences.get('mtfaindex')))
+    gsize = os.path.normpath(os.path.join(mitodelta_path, user_preferences.get('gsize')))
+    MT_fasta = os.path.normpath(os.path.join(mitodelta_path, user_preferences.get('MT_fasta')))
     
     refchr = user_preferences.get('refchr')
     msize = int(user_preferences.get('msize', 0))
