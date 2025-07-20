@@ -1,11 +1,10 @@
 # Snakefile
-mitodelta = "/path/to/mitodelta"
-out_dir = "/path/to/outputdir"
+mitodelta = "/mitodelta_abs"
 
 
 rule all:
     input:
-        f"{out_dir}/step3_deletions_afterfiltering.tsv"
+        "./step3_deletions_afterfiltering.tsv"
 
 
 rule step1:        
@@ -14,13 +13,12 @@ rule step1:
     params:
         script=f"{mitodelta}/scripts/01_step1.sh",
         path=mitodelta,
-        bam="/path/to/bam_dir",
-        label="/path/to/label_dir",
-        out=out_dir
+        bam="./0_bamfile",
+        label="./0_metafile"
     shell:
         """
         mkdir -p results
-        bash {params.script} {params.path} {params.bam} {params.label} {params.out}
+        bash {params.script} {params.path} {params.bam} {params.label}
         touch {output}
         """
 
@@ -29,31 +27,29 @@ rule step2:
     input:
         "results/step1.txt"
     output:
-        "results/step2.txt"
+        "results/step2_deletions_beforefiltering.tsv"
     params:
         script=f"{mitodelta}/scripts/02_step2.sh",
         path=mitodelta,
-        config=f"{mitodelta}/config_human.txt",
-        out=out_dir
+        config=f"{mitodelta}/config_mouse.txt"
     shell:
         """
-        bash {params.script} {params.path} {params.config} {params.out}
+        bash {params.script} {params.path} {params.config}
         touch {output}
         """
 
 
 rule step3:
     input:
-        "results/step2.txt"
+        "results/step2_deletions_beforefiltering.tsv"
     output:
-        f"{out_dir}/step3_deletions_afterfiltering.tsv"
+        "results/step3_deletions_afterfiltering.tsv"
     params:
-        script=f"{mitodelta}/scripts/03_step3.sh",
+        script=f"{mitodelta}/scripts/3_filter_variant.py",
         path=mitodelta,
-        out=out_dir,
         err="1.0",
         fdr="0.05"
     shell:
         """
-        bash {params.script} {params.path} {params.out} {params.err} {params.fdr}
+        python {params.script} {input} {output} --err {params.err} --fdr {params.fdr}
         """
