@@ -13,8 +13,8 @@ rule step1:
     params:
         script=f"{mitodelta}/scripts/01_step1.sh",
         path=mitodelta,
-        bam="./0_bamfile",
-        label="./0_metafile"
+        bam="path/to/bam_file_dir",
+        label="path/to/cell_type_label_file_dir"
     shell:
         """
         mkdir -p results
