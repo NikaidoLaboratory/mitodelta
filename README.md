@@ -15,8 +15,10 @@ Or build it locally from the provided Dockerfile:
 cd mitodelta
 docker build -t mitodelta_env .
 ```
-The -t mitodelta_env option tags your image for easier reference.
-
+Activate the Docker environment using the command below, then proceed with Steps 1–3.
+```
+% docker run -it --rm --name my_container -v "$(pwd)":/workspace -w /workspace mitodelta_env:1.0.2 /bin/bash
+```
 
 ## Usage
 The workflow is managed via [Snakemake](https://snakemake.readthedocs.io/en/stable/).
