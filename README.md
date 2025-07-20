@@ -10,7 +10,8 @@ Then, pull the pre-built Docker image:
 ```
 docker pull harukonak/mitodelta_env:1.0.2
 ```
-Activate the Docker environment using the command below, then proceed with Steps 1–3.
+When you run MitoDelta, activate the Docker environment using the command below.  
+Replace `/path/to/mitodelta_repository` with the absolute path to the cloned mitodelta GitHub repository (e.g., `/home/username/projects/mitodelta`), then proceed with Steps 1–3.
 ```
 docker run -it --rm --name my_container \
   -v "$(pwd)":/workspace \
