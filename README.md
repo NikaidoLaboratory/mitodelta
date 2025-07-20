@@ -10,14 +10,14 @@ Then, pull the pre-built Docker image:
 ```
 docker pull harukonak/mitodelta_env:1.0.2
 ```
-Or build it locally from the provided Dockerfile:
-```
-cd mitodelta
-docker build -t mitodelta_env .
-```
 Activate the Docker environment using the command below, then proceed with Steps 1–3.
 ```
-% docker run -it --rm --name my_container -v "$(pwd)":/workspace -w /workspace mitodelta_env:1.0.2 /bin/bash
+docker run -it --rm --name my_container \
+  -v "$(pwd)":/workspace \
+  -v /path/to/mitodelta_repository:/mitodelta_abs \
+  -w /workspace \
+  mitodelta_env:1.0.2 \
+  /bin/bash
 ```
 
 ## Usage
