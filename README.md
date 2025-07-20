@@ -61,7 +61,7 @@ This will execute `3_filter_variant.py` and return the final list of high-confid
 
 ## Notes
 - You must define the variable `mitodelta` (the path to the pipeline) in the `Snakefile`.
-- Intermediate steps generate dummy files (`results/step1.txt`, `results/step2.txt`) to help Snakemake manage dependencies.
+- Step 1 generates a dummy file (`results/step1.txt`) to help Snakemake manage dependencies.
 - Ensure all required input files exist and paths are correct.
 
 ## License
