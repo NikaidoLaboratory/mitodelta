@@ -31,6 +31,7 @@ for label in $lab_dir/*.tsv; do
 python $mitodelta/scripts/1_split_bam.py \
 --bam $bam \
 --meta $label \
+--id $sample \
 --outdir $output \
 --max_NH 1 \
 --min_MQ 0
@@ -39,6 +40,7 @@ for outbam in $output/${sample}.*.bam; do
   outfq="\$(dirname "\$outbam")/\$(basename "\${outbam%.bam}").fastq"
   samtools fastq "\$outbam" > "\$outfq"
   rm "\$outbam"
+  rm "\$outbam.bai"
 done
 EOF
 
