@@ -13,7 +13,7 @@ groupBy = /opt/miniforge/bin/groupBy
 bg2bw = /opt/miniforge/bin/bedGraphToBigWig
 
 
-#GENOMES (specify absolute paths below)
+#GENOMES (specify absolute paths below; modify them for your own environment)
 lastindex = ../mitodelta/genome/human/human_mt
 mtfaindex = ../mitodelta/genome/human/human_mt.fasta.fai
 MT_fasta = ../mitodelta/genome/human/human_mt.fasta
