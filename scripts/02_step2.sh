@@ -29,7 +29,7 @@ rm -rf "$output/bam" "$output/bw" "$output/tab"
 
 
 # Collect results
-result="$output/step2_deletions_beforefiltering.tsv"
+result="$out_dir/step2_deletions_beforefiltering.tsv"
 echo -e "name\tbreak5\tbreak3\tdelread\twtread\theteroplasmy" > "$result"
 
 if ls $output/del/*.cluster 1> /dev/null 2>&1; then
