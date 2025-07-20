@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean
 
 RUN ln -sf /usr/bin/python3 /usr/bin/python
+RUN pip3 install pysam pandas numpy
 
 RUN wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh \
     && chmod +x ./Miniforge3-Linux-x86_64.sh \
@@ -39,11 +40,10 @@ RUN wget https://github.com/conda-forge/miniforge/releases/latest/download/Minif
     && rm ./Miniforge3-Linux-x86_64.sh
 ENV PATH="$PATH:/opt/miniforge/bin"
 
-RUN conda update -y -n base -c conda-forge conda
-RUN conda create -y -n mitodelta_env -c conda-forge -c bioconda \
+RUN conda update -y -n base -c conda-forge conda \
+ && conda install -y -n base -c conda-forge -c bioconda \
  last seqtk samtools bedtools ucsc-bedgraphtobigwig ucsc-fasomerecords ucsc-fasize \
  snakemake pysam pandas numpy scipy statsmodels
 
-SHELL ["/bin/bash", "-c"]
-RUN conda init bash && echo "conda activate mitodelta_env" >> ~/.bashrc
+RUN /opt/miniforge/bin/conda init bash
 CMD ["/bin/bash", "-l"]
