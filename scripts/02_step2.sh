@@ -2,34 +2,34 @@
 
 # Step 2. Identifying candidate deletions via LAST
 
-if [ "$#" -ne 3 ]; then
-  echo "Usage: $0 <mitodelta path> <config file> <output dir>"
+if [ "$#" -ne 2 ]; then
+  echo "Usage: $0 <mitodelta path> <config file>"
   exit 1
 fi
 
 mitodelta="$1"
 config="$2"
-out_dir="$3"
-fq_dir="$out_dir/1_splitfq"
-output="$out_dir/2_lastout"
+fq_dir="1_splitfq"
+output="2_lastout"
 
 mkdir -p $output
-cd $output || exit 1
 
 
 # Run deletion calling
-for fastq in "$fq_dir"/*.fastq; do
+cd $output || exit 1
+
+for fastq in ../$fq_dir/*.fastq; do
   filename=$(basename "$fastq")
   sample="${filename%.fastq}"
-  python "$mitodelta/scripts/2_deletion_call.py" "$config" "$fastq" "$sample"
+  python "$mitodelta/scripts/2_deletion_call.py" "$config" "$fastq" "$sample" "$mitodelta"
 done
 
-rm -rf "$output/bam" "$output/bw" "$output/tab"
-
+rm -rf "bam" "bw" "tab"
+cd ../
 
 
 # Collect results
-result="$out_dir/step2_deletions_beforefiltering.tsv"
+result="./results/step2_deletions_beforefiltering.tsv"
 echo -e "name\tbreak5\tbreak3\tdelread\twtread\theteroplasmy" > "$result"
 
 if ls $output/del/*.cluster 1> /dev/null 2>&1; then
