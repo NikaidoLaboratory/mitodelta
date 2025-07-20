@@ -14,10 +14,10 @@ bg2bw = /opt/miniforge/bin/bedGraphToBigWig
 
 
 #GENOMES (specify absolute paths below; modify them for your own environment)
-lastindex = ../mitodelta/genome/mouse/mouse_mt
-mtfaindex = ../mitodelta/genome/mouse/mouse_mt.fasta.fai
-MT_fasta = ../mitodelta/genome/mouse/mouse_mt.fasta
-gsize = ../mitodelta/genome/mouse/mm39.size
+lastindex = genome/mouse/mouse_mt
+mtfaindex = genome/mouse/mouse_mt.fasta.fai
+MT_fasta = genome/mouse/mouse_mt.fasta
+gsize = genome/mouse/mm39.size
 
 
 #MITOCHONDRIA FEATURES
