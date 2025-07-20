@@ -12,7 +12,8 @@ Custom scripts used across these analyses are stored in the `eklipse/`, `mitosal
 ├── 1_defalut-benchmark_simulated-data/ # Default benchmark using simulated data  
 ├── 2_customized-benchmark_simulated-data/ # Customized benchmark using simulated data  
 ├── 3_customized-benchmark_real-ps-data/ # Customized benchmark using real data  
-├── 4_mitodelta-application_real-pd-data/ # MitoDelta application using real Parkinson’s disease data  
+├── 4_mitodelta_application_genome-edited-cell-line-data/ # MitoDelta application using cell line data  
+├── 5_mitodelta-application_real-pd-data/ # MitoDelta application using real Parkinson’s disease data  
 
 ## Overview of Contents
 
@@ -25,6 +26,9 @@ Custom scripts used across these analyses are stored in the `eklipse/`, `mitosal
 - **3_customized-benchmark_real-ps-data/**  
   Benchmarking (including customized existing tools) using real Pearson syndrome patients’ scRNA-seq data.
 
-- **4_mitodelta-application_real-pd-data/**  
+- **4_mitodelta_application_genome-edited-cell-line-data/**  
+  Application of MitoDelta analysis on both wild type and mtDNA deletion introduced cell line data.
+
+- **5_mitodelta-application_real-pd-data/**  
   Application of MitoDelta analysis on real Parkinson’s disease data.
 
