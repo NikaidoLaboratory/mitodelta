@@ -6,7 +6,7 @@ Custom scripts used across these analyses are stored in the `eklipse/`, `mitosal
 
 ## Directory Structure
 .  
-├── ```eklipse/                                              # Custom scripts for Eklipse```  
+├── eklipse/                                              # Custom scripts for Eklipse  
 ├── mitosalt/                                             # Custom scripts for MitoSalt  
 ├── splicebreak/                                          # Custom scripts for SpliceBreak  
 ├── 1_defalut-benchmark_simulated-data/                   # Default benchmark using simulated data  
