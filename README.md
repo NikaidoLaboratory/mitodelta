@@ -37,13 +37,12 @@ In the `Snakefile`, set the paths to match your environment:
 - `bam_dir/`: Directory containing sample BAM files (`.bam`)  
 - `label_dir/`: Directory containing cell-type label files (`.tsv`)
 
-**3. Prepare Input Files**
+**3. Prepare Input Files**  
 For each sample, provide:  
 - A BAM file in `bam_dir/`
 - A corresponding cell-type label file in `label_dir/`  
-> Both files must share the same file name prefix (e.g., Sample1.bam and Sample1.tsv).
 
-Example directory structure:
+Example directory structure:  
 ```
 bam_dir/
 ├── Sample1.bam
@@ -55,7 +54,8 @@ label_dir/
 ├── Sample2.tsv
 ├── Sample3.tsv
 ```
-
+> Both files must share the same file name prefix (e.g., Sample1.bam and Sample1.tsv).
+  
 **4. Format of Cell-Type Label Files (`*.tsv`)**  
 Each `.tsv` file should contain two columns:  
 - `Index`: Cell barcode
