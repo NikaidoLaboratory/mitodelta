@@ -1,2 +1,0 @@
-# chrom	meanCoverage
-chrM	41.8334
