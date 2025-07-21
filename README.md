@@ -1,5 +1,5 @@
 # MitoDelta
-**MitoDelta** is a computational pipeline for identifying mitochondrial DNA (mtDNA) deletion variants at cell-type resolution from scRNA-seq data.
+**MitoDelta** is a computational pipeline for identifying mitochondrial DNA (mtDNA) deletion variants at cell-type resolution from single cell RNA-seq data.
 
 ## Instalation
 First, clone the MitoDelta repository:
