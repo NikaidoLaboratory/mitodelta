@@ -70,8 +70,8 @@ GCTAGGATAACCTTG	Oligodendrocyte
 CTAGGTCGGATGACG	Astrocyte
 CACAACAGCCTTATA	Microglia
 ```
-**5. Run Step 1: Splitting BAM Files by Cell Type and Converting to Corresponding FASTQ Files**
-Then run:
+**5. Run Step 1: Splitting BAM Files by Cell Type and Converting to Corresponding FASTQ Files**  
+To execute this step, run the following command:
 ```
 snakemake --cores 1 results/step1.txt
 ```
@@ -105,3 +105,6 @@ This will execute `3_filter_variant.py` and return the final list of high-confid
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+## Citation
+TBD
