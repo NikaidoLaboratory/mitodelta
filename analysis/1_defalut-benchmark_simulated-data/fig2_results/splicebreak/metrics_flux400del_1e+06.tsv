@@ -1,0 +1,9 @@
+Metric	Value
+True Positive	46
+False Negative	54
+False Positive	28
+True Negative	0
+Accuracy	0.359375
+Precision	0.621621621621622
+Recall	0.46
+F1 score	0.528735632183908
