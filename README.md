@@ -41,7 +41,8 @@ In the `Snakefile`, set the paths to match your environment:
 For each sample, provide:  
 - A BAM file in `bam_dir/`
 - A corresponding cell-type label file in `label_dir/`  
-> Both files must share the same file name prefix (e.g., Sample1.bam and Sample1.tsv).  
+> Both files must share the same file name prefix (e.g., Sample1.bam and Sample1.tsv).
+
 Example directory structure:
 ```
 bam_dir/
@@ -74,9 +75,9 @@ Then run:
 ```
 snakemake --cores 1 results/step1.txt
 ```
-This step will call the script `01_step1.sh`,`1_split_bam.py` to split your BAM files based on cell-type labels.
+This step executes the script `01_step1.sh`, which calls `1_split_bam.py` to split your BAM files based on cell-type labels. The resulting output will be cell-type-splitted FASTQ files, saved in the `1_splitfq/` directory.
 
-### Step 2. Candidate deletion calling
+### Step 2. Candidate Deletion Calling
 This step detects candidate mtDNA deletions using the provided configuration file (e.g., config_human.txt).
 Update the `Snakefile` to specify the correct path to the config file.
 
@@ -86,7 +87,7 @@ snakemake --cores 1 results/step2_deletions_beforefiltering.tsv
 ```
 This will execute `02_step2.sh`,`2_deletion_call.py` and generate a table of candidate deletions.
 
-### Step 3. Variant filtering
+### Step 3. Variant Filtering
 This step applies a beta-binomial error model to filter out likely false positives.
 The filtering thresholds (error rate and FDR) are configurable in the `Snakefile`.
 
