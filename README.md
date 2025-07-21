@@ -1,5 +1,5 @@
 # MitoDelta
-**MitoDelta** is a computational pipeline for identifying mitochondrial DNA (mtDNA) deletion variants at cell-type resolution.
+**MitoDelta** is a computational pipeline for identifying mitochondrial DNA (mtDNA) deletion variants at cell-type resolution from scRNA-seq data.
 
 ## Instalation
 First, clone the MitoDelta repository:
@@ -26,11 +26,50 @@ The workflow is managed via [Snakemake](https://snakemake.readthedocs.io/en/stab
 Each step of the pipeline is described below.
 
 ### Step 1. Split BAM files by cell types
-First, copy the `Snakefile` to your working directory, and then configure according to your environment.
-In the `Snakefile`, set the paths to the following:
-- BAM directory (`bam_dir`)
-- Cell-type label directory (`label_dir`)
+**1. Copy the Snakefile**  
+First, copy the `Snakefile` to your working directory.
+```
+cp /path/to/mitodelta/Snakefile /path/to/your/working_directory/
+```
 
+**2. Configure Paths**  
+In the `Snakefile`, set the paths to match your environment:
+- `bam_dir/`: Directory containing sample BAM files (`.bam`)  
+- `label_dir/`: Directory containing cell-type label files (`.tsv`)
+
+**3. Prepare Input Files**
+For each sample, provide:  
+- A BAM file in `bam_dir/`
+- A corresponding cell-type label file in `label_dir/`  
+> Both files must share the same file name prefix (e.g., Sample1.bam and Sample1.tsv).  
+Example directory structure:
+```
+bam_dir/
+├── Sample1.bam
+├── Sample2.bam
+├── Sample3.bam
+
+label_dir/
+├── Sample1.tsv
+├── Sample2.tsv
+├── Sample3.tsv
+```
+
+**4. Format of Cell-Type Label Files (`*.tsv`)**  
+Each `.tsv` file should contain two columns:  
+- `Index`: Cell barcode
+- `Cell_type`: Annotated cell type  
+
+Example: `Sample1.tsv`
+```
+Index	Cell_type
+GACCACTAAGTTGTT	Astrocyte
+AGGAGAGGAGGTGAA	Neuron
+GCTAGGATAACCTTG	Oligodendrocyte
+CTAGGTCGGATGACG	Astrocyte
+CACAACAGCCTTATA	Microglia
+```
+**5. Run Step 1: Splitting BAM Files by Cell Type and Converting to Corresponding FASTQ Files**
 Then run:
 ```
 snakemake --cores 1 results/step1.txt
