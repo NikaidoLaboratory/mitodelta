@@ -17,7 +17,7 @@ docker run -it --rm --name my_container \
   -v "$(pwd)":/workspace \
   -v /path/to/mitodelta_repository:/mitodelta_abs \
   -w /workspace \
-  mitodelta_env:1.0.2 \
+  harukonak/mitodelta_env:1.0.2 \
   /bin/bash
 ```
 
