@@ -107,4 +107,4 @@ This will execute `3_filter_variant.py` and return the final list of high-confid
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ## Citation
-TBD
+Nakagawa, H., Shima, Y., Sasagawa, Y. & Nikaido, I. MitoDelta: identifying mitochondrial DNA deletions at cell-type resolution from single-cell RNA sequencing data. BMC Genomics 26, 810 (2025). https://doi.org/10.1186/s12864-025-11931-0
